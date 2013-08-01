@@ -14,7 +14,7 @@
     </repositories>
   </contributions>
   <contributions label="UML Designer">
-    <repositories location="http://update.obeo.fr/release/uml/2.3.0">
+    <repositories location="http://update.obeo.fr/release/uml/2.3.1">
       <features name="org.obeonetwork.dsl.feature.uml2.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
     </repositories>
   </contributions>
