@@ -1,0 +1,21 @@
+<project name="Aggregate Repo for Obeo Network depending of buildtype" default="main">
+	<!-- Initialize the properties -->
+	<property environment="env" />
+
+	<target name="main">
+
+		<!-- clean up -->
+		<delete includeemptydirs="true" failonerror="no">
+			<fileset dir="${env.WORKSPACE}/work/" />
+		</delete>
+
+		<!-- Call the correct build file -->
+		<condition property="buildType" value="${env.BUILD_TYPE}">
+			<isset property="BUILD_TYPE" />
+		</condition>
+
+		<ant antfile="aggr_${buildType}.xml" />
+
+	</target>
+
+</project>

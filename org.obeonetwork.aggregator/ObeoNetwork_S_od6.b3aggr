@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Aggregator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2010/aggregator/1.0.0" buildmaster="//@contacts[email='stephane.bouchet@obeo.fr']" label="Obeo Network for OD6" buildRoot="/tmp/ONaggr">
+  <configurations/>
+  <configurations operatingSystem="linux" windowSystem="gtk"/>
+  <configurations operatingSystem="macosx" windowSystem="carbon"/>
+  <contacts name="Stephane Bouchet" email="stephane.bouchet@obeo.fr"/>
+  <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network"/>
+</aggregator:Aggregator>

@@ -1,0 +1,21 @@
+This project is used by the Network aggregator job to publish Aggregated update sites in 2 places :
+- In bouffay to /Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/
+- In the Internet to http://marketplace.obeonetwork.com/updates
+
+How-to trigger a build: 
+there is 3 types of builds
+- N for nightly (integration) 
+- S for stables
+- R for releases
+
+Each of these builds goes to a specific place. ( see the xml files to have the paths)
+
+by default, the N aggregation is triggered each day by hudson
+by hand, choose the right build type when the build asks for a parameter
+
+How to modify the aggregation:
+- install B3 aggregator editor into your eclipse env. USE B3 v0.1.0
+- modify the agregation file depending on the new update site to add to the final aggregated update site, and the OD version used
+- validate and verify the b3 model file ( right clic -> validate and right clic -> verify repository
+- modify IF NECESSARY the xml file in order to create a composite repo of the final aggregated update site + the redirection for the necessary third party updates sites ( eclipse release train...)
+- commit your changes

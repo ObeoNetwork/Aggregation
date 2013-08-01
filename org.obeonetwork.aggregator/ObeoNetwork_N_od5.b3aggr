@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aggregator:Aggregator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2010/aggregator/1.0.0" buildmaster="//@contacts[email='stephane.bouchet@obeo.fr']" label="Obeo Network for OD 5" buildRoot="/tmp/ON_OD5">
+  <configurations/>
+  <configurations operatingSystem="linux" windowSystem="gtk"/>
+  <configurations operatingSystem="macosx" windowSystem="carbon"/>
+  <contributions label="Extension Pack">
+    <repositories location="http://update.obeo.fr/stable/od-extensions/stable-2.1.1/fr.obeo.dsl.viewpoint.extensions.update/"/>
+    <repositories enabled="false" location="http://update.obeo.fr/integration/vp-eef-bridge/repository/"/>
+  </contributions>
+  <contributions label="UML to Java Generator">
+    <repositories location="http://update.obeo.fr/integration/acceleo3-modules/uml2java/1.0/repository/"/>
+  </contributions>
+  <contributions label="BPMN2">
+    <repositories enabled="false" location="http://update.obeo.fr/integration/bpmn2/repository/"/>
+  </contributions>
+  <contributions label="DocumentationTooling">
+    <repositories location="http://update.obeo.fr/integration/documentationTooling/repository/"/>
+  </contributions>
+  <contributions label="Requirement">
+    <repositories location="http://update.obeo.fr/integration/requirement/repository/"/>
+  </contributions>
+  <contributions label="SCA">
+    <repositories location="http://update.obeo.fr/integration/sca/repository/"/>
+  </contributions>
+  <contributions label="SPEM">
+    <repositories location="http://update.obeo.fr/integration/spem/repository/"/>
+  </contributions>
+  <contributions label="SysML">
+    <repositories location="http://update.obeo.fr/release/sysml/0.7.1/"/>
+  </contributions>
+  <contributions label="Environment_Models">
+    <repositories location="http://update.obeo.fr/integration/od4is/environment_models/repository/"/>
+  </contributions>
+  <contributions label="Cinematic_Models">
+    <repositories location="http://update.obeo.fr/integration/od4is/cinematic_models/repository/"/>
+  </contributions>
+  <contributions label="Overview_Models">
+    <repositories location="http://update.obeo.fr/integration/od4is/overview_models/repository/"/>
+  </contributions>
+  <contributions label="SOA_Models">
+    <repositories location="http://update.obeo.fr/integration/od4is/soa_models/repository/"/>
+  </contributions>
+  <contributions label="Entity_Models">
+    <repositories location="http://update.obeo.fr/integration/od4is/entity_models/repository/"/>
+  </contributions>
+  <contributions label="Interaction_Models">
+    <repositories location="http://update.obeo.fr/integration/od4is/interaction_models/repository/"/>
+  </contributions>
+  <contributions label="IS_Designer">
+    <repositories location="http://update.obeo.fr/integration/od4is/is_designer/repository/"/>
+  </contributions>
+  <contributions label="IS_Common">
+    <repositories location="http://update.obeo.fr/integration/od4is/is_common/repository/"/>
+  </contributions>
+  <contributions label="Environment_Java_Generator">
+    <repositories location="http://update.obeo.fr/integration/od4is/environment_java_generator/repository/"/>
+  </contributions>
+  <contributions label="Cinematic_Struts_Generator">
+    <repositories location="http://update.obeo.fr/integration/od4is/cinematic_struts_generator/repository/"/>
+  </contributions>
+  <contributions label="Cinematic_Struts_Spring_Generator">
+    <repositories location="http://update.obeo.fr/integration/od4is/cinematic_struts_spring_generator/repository"/>
+  </contributions>
+  <contributions label="Entity_Hibernate_Generator">
+    <repositories location="http://update.obeo.fr/integration/od4is/entity_hibernate_generator/repository"/>
+  </contributions>
+  <contributions label="SOA_Spring_Generator">
+    <repositories location="http://update.obeo.fr/integration/od4is/soa_spring_generator/repository"/>
+  </contributions>
+  <contributions label="SOA_Spring_Hibernate_Generator">
+    <repositories location="http://update.obeo.fr/integration/od4is/soa_spring_hibernate_generator/repository"/>
+  </contributions>
+  <contributions label="Graal">
+    <repositories location="http://update.obeo.fr/integration/graal/repository/"/>
+  </contributions>
+  <contributions label="UML Release 1.1 ( Used by SysML, to be moved to OD6 )">
+    <repositories location="http://update.obeo.fr/release/uml/1.1.0/">
+      <features name="org.obeonetwork.dsl.feature.uml2.feature.group" categories="//@customCategories[identifier='Obeo%20Network']"/>
+    </repositories>
+  </contributions>
+  <contributions label="MARTE">
+    <repositories location="http://update.obeo.fr/integration/marte/od5/repository/"/>
+    <repositories location="http://mirror.update.eclipse.obeo.fr/papyrus-helios">
+      <bundles name="org.eclipse.papyrus.diagram.common"/>
+    </repositories>
+  </contributions>
+  <contributions label="Safety">
+    <repositories location="http://update.obeo.fr/release/risk-analysis/1.0.1/"/>
+  </contributions>
+  <contacts name="Stephane Bouchet" email="stephane.bouchet@obeo.fr"/>
+  <customCategories identifier="Obeo Network" label="Obeo Network" features="//@contributions[label='UML%20Release%201.1%20(%20Used%20by%20SysML%2C%20to%20be%20moved%20to%20OD6%20)']/@repositories.0/@features.0"/>
+  <validationRepositories location="http://mirror.update.eclipse.obeo.fr/release-helios-3.6/"/>
+  <validationRepositories location="http://mirror.update.eclipse.obeo.fr/release-eef-0.9/"/>
+  <validationRepositories location="http://update.obeo.fr/bundles/ObeoDesigner/livraison/5.0.10/update/3.6/"/>
+  <validationRepositories location="http://download.eclipse.org/soa/sca/indigo"/>
+  <validationRepositories location="http://download.eclipse.org/modeling/m2t/acceleo/updates/releases/3.2"/>
+</aggregator:Aggregator>
