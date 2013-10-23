@@ -15,9 +15,6 @@
   <contributions label="BPMN2">
     <repositories location="http://update.obeo.fr/integration/bpmn2/repository/"/>
   </contributions>
-  <contributions label="InformationSystem">
-    <repositories location="http://update.obeo.fr/integration/informationsystem/design/"/>
-  </contributions>
   <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
   <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network"/>
   <validationRepositories location="http://mirror.update.eclipse.obeo.fr/release-indigo-3.7/"/>
