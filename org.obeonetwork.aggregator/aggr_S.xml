@@ -23,7 +23,7 @@
 
 		<!--Aggregate all Stables Builds -->
 		<exec executable="${b3.executable}" failonerror="true">
-			<arg line="aggregate --buildModel ${env.WORKSPACE}/org.obeonetwork.aggregator/ObeoNetwork_S_od6.b3aggr --action BUILD --buildRoot ${b3.workdir}/od61 -vmargs -Xms256m -Xmx512m" />
+			<arg line="aggregate --buildModel ${env.WORKSPACE}/org.obeonetwork.aggregator/ObeoNetwork_S_od6.b3aggr --action BUILD --buildRoot ${b3.workdir}/od62 -vmargs -Xms256m -Xmx512m" />
 		</exec>
 
 		<!-- Copy contents to intranet -->
@@ -41,15 +41,15 @@
 	<!-- OD 6 targets -->
 	<target name="add_od6">
 		<delete includeemptydirs="true" failonerror="no">
-			<fileset dir="${aggr.location}/od61" />
+			<fileset dir="${aggr.location}/od62" />
 		</delete>
-		<mkdir dir="${aggr.location}/od61" />
-		<mkdir dir="${aggr.location}/marketplace/od61" />
-		<move todir="${aggr.location}/marketplace/od61">
-			<fileset dir="${b3.workdir}/od61/final" />
+		<mkdir dir="${aggr.location}/od62" />
+		<mkdir dir="${aggr.location}/marketplace/od62" />
+		<move todir="${aggr.location}/marketplace/od62">
+			<fileset dir="${b3.workdir}/od62/final" />
 		</move>
 		<p2.composite.repository>
-			<repository location="file:${aggr.location}/od61" name="Obeo MarketPlace Repository" />
+			<repository location="file:${aggr.location}/od62" name="Obeo MarketPlace Repository" />
 			<add>
 				<repository location="http://download.eclipse.org/releases/indigo" />
 				<repository location="file:marketplace" />
@@ -95,25 +95,25 @@
 
 	<target name="copyToIntranet">
 		<!-- cleanup -->
-		<sshexec host="${intranet.host}" username="${user.name}" keyfile="${user.home}/.ssh/id_dsa" command="mkdir -p ${intranet.location}/${time.current}/od61" />
+		<sshexec host="${intranet.host}" username="${user.name}" keyfile="${user.home}/.ssh/id_dsa" command="mkdir -p ${intranet.location}/${time.current}/od62" />
 
 		
 		<!-- copy contents to intranet -->
-		<scp todir="${user.name}@${intranet.host}:${intranet.location}/${time.current}/od61" keyfile="${user.home}/.ssh/id_dsa">
-			<fileset dir="${b3.workdir}/od61/final" />
+		<scp todir="${user.name}@${intranet.host}:${intranet.location}/${time.current}/od62" keyfile="${user.home}/.ssh/id_dsa">
+			<fileset dir="${b3.workdir}/od62/final" />
 		</scp>
 	</target>
 
 	<target name="uploadToFinalLocation">
 		<!-- cleanup -->
-		<sshexec host="${marketplace.host}" username="${user.name}" keyfile="${user.home}/.ssh/id_dsa" command="rm -rf ${marketplace.location};  mkdir -p ${marketplace.location}/od61/marketplace" />
+		<sshexec host="${marketplace.host}" username="${user.name}" keyfile="${user.home}/.ssh/id_dsa" command="rm -rf ${marketplace.location};  mkdir -p ${marketplace.location}/od62/marketplace" />
 
 		<!-- copy contents to marketplace -->
-		<scp todir="${user.name}@${marketplace.host}:${marketplace.location}/od61" keyfile="${user.home}/.ssh/id_dsa">
-			<fileset dir="${aggr.location}/od61" />
+		<scp todir="${user.name}@${marketplace.host}:${marketplace.location}/od62" keyfile="${user.home}/.ssh/id_dsa">
+			<fileset dir="${aggr.location}/od62" />
 		</scp>
-		<scp todir="${user.name}@${marketplace.host}:${marketplace.location}/od61/marketplace" keyfile="${user.home}/.ssh/id_dsa">
-			<fileset dir="${aggr.location}/marketplace/od61" />
+		<scp todir="${user.name}@${marketplace.host}:${marketplace.location}/od62/marketplace" keyfile="${user.home}/.ssh/id_dsa">
+			<fileset dir="${aggr.location}/marketplace/od62" />
 		</scp>
 	</target>
 
