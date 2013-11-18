@@ -15,6 +15,14 @@
       <categories name="201310170826.od"/>
     </repositories>
   </contributions>
+  <contributions label="UML Designer">
+    <repositories location="http://update.obeo.fr/release/uml/3.0.0">
+      <features name="org.obeonetwork.dsl.feature.uml2.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+    </repositories>
+  </contributions>
+  <contributions label="SysML Designer">
+    <repositories location="http://update.obeo.fr/release/sysml/3.0.0"/>
+  </contributions>
   <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
   <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network"/>
 </aggregator:Aggregator>
