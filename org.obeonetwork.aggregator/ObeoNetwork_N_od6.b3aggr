@@ -17,7 +17,7 @@
     <repositories location="http://update.obeo.fr/integration/acceleo3-modules/uml2java/2.0/repository/"/>
   </contributions>
   <contributions label="UML Designer">
-    <repositories location="http://update.obeo.fr/integration/uml/repository">
+    <repositories location="http://update.obeo.fr/release/uml/2.4.1">
       <features name="org.obeonetwork.dsl.feature.uml2.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
     </repositories>
   </contributions>
