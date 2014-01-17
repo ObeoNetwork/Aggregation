@@ -12,11 +12,13 @@
       <features name="org.eclipse.gmf.runtime.notation.feature.patch.feature.group"/>
       <features name="org.eclipse.net4j.feature.patch.feature.group"/>
       <features name="fr.obeo.mda.license.feature.group"/>
-      <categories name="201310170826.od"/>
+      <categories name="201401162033.od"/>
     </repositories>
   </contributions>
   <contributions label="UML Designer">
-    <repositories location="http://update.obeo.fr/release/uml/3.0.0"/>
+    <repositories location="http://update.obeo.fr/release/uml/3.0.0">
+      <features name="org.obeonetwork.dsl.feature.uml2.feature.group"/>
+    </repositories>
   </contributions>
   <contributions label="SysML Designer">
     <repositories location="http://update.obeo.fr/release/sysml/3.0.0"/>
