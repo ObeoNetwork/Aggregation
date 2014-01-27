@@ -1,28 +1,30 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<aggregator:Aggregator xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2010/aggregator/1.0.0" label="Obeo Network for OD62" buildRoot="/tmp/ON_od62">
+<?xml version="1.0" encoding="ASCII"?>
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for OD62" buildRoot="/tmp/ON_od62">
+  <validationSets label="main">
+    <contributions label="Obeo Designer 6.2">
+      <repositories location="http://www.obeo.fr/download/release/designer/6.2/latest/kepler/update">
+        <features name="org.eclipse.emf.cdo.feature.patch.feature.group"/>
+        <features name="org.eclipse.emf.cdo.server.feature.patch.feature.group"/>
+        <features name="org.eclipse.emf.cdo.server.feature.group"/>
+        <features name="org.eclipse.emf.cdo.feature.group"/>
+        <features name="org.eclipse.gmf.runtime.notation.feature.patch.feature.group"/>
+        <features name="org.eclipse.net4j.feature.patch.feature.group"/>
+        <features name="fr.obeo.mda.license.feature.group"/>
+        <categories name="201401162033.od"/>
+      </repositories>
+    </contributions>
+    <contributions label="UML Designer">
+      <repositories location="http://update.obeo.fr/release/uml/3.0.0">
+        <features name="org.obeonetwork.dsl.feature.uml2.feature.group"/>
+      </repositories>
+    </contributions>
+    <contributions label="SysML Designer">
+      <repositories location="http://update.obeo.fr/release/sysml/3.0.0"/>
+    </contributions>
+  </validationSets>
   <configurations/>
   <configurations operatingSystem="linux" windowSystem="gtk"/>
   <configurations operatingSystem="macosx" windowSystem="carbon"/>
-  <contributions label="Obeo Designer 6.2">
-    <repositories location="http://www.obeo.fr/download/release/designer/6.2/latest/kepler/update">
-      <features name="org.eclipse.emf.cdo.feature.patch.feature.group"/>
-      <features name="org.eclipse.emf.cdo.server.feature.patch.feature.group"/>
-      <features name="org.eclipse.emf.cdo.server.feature.group"/>
-      <features name="org.eclipse.emf.cdo.feature.group"/>
-      <features name="org.eclipse.gmf.runtime.notation.feature.patch.feature.group"/>
-      <features name="org.eclipse.net4j.feature.patch.feature.group"/>
-      <features name="fr.obeo.mda.license.feature.group"/>
-      <categories name="201401162033.od"/>
-    </repositories>
-  </contributions>
-  <contributions label="UML Designer">
-    <repositories location="http://update.obeo.fr/release/uml/3.0.0">
-      <features name="org.obeonetwork.dsl.feature.uml2.feature.group"/>
-    </repositories>
-  </contributions>
-  <contributions label="SysML Designer">
-    <repositories location="http://update.obeo.fr/release/sysml/3.0.0"/>
-  </contributions>
-  <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
   <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network"/>
-</aggregator:Aggregator>
+  <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
+</aggregator:Aggregation>
