@@ -6,16 +6,16 @@
     <artifactId>org.obeonetwork.aggregate</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
- 
+
     <properties>
         <tycho-version>0.18.1</tycho-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- might be N, R or S-->
         <BUILD_TYPE>N</BUILD_TYPE> 
     </properties>
- 
- 
- 
+
+
+
     <build>
         <plugins>
             <plugin>
@@ -41,7 +41,7 @@
                             <url> http://download.eclipse.org/modeling/emft/b3/updates-4.3/</url>
                         </repository>
                     </repositories>
-                    <appArgLine>-application org.eclipse.b3.cli.headless aggregate --buildModel ObeoNetwork_${BUILD_TYPE}_od6.b3aggr --action VALIDATE</appArgLine>
+                    <appArgLine>-application org.eclipse.b3.cli.headless aggregate --buildModel ObeoNetwork_${BUILD_TYPE}_od6.b3aggr --action CLEAN_BUILD</appArgLine>
                     <dependencies>
                         <dependency>
                             <artifactId>org.eclipse.b3.aggregator.engine.feature</artifactId>
@@ -57,7 +57,7 @@
                         <phase>package</phase>
                     </execution>
                 </executions>
-            </plugin>
+            </plugin>           
         </plugins>
     </build>
 </project>
