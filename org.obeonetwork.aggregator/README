@@ -8,7 +8,7 @@ there is 3 types of builds
 - S for stables
 - R for releases
 
-Each of these builds goes to a specific place. ( see the xml files to have the paths)
+Each of these builds goes to a specific place. ( see the promote.sh file to have the paths)
 
 by default, the N aggregation is triggered each day by hudson
 by hand, choose the right build type when the build asks for a parameter
