@@ -10,6 +10,7 @@
       <features name="org.eclipse.emf.cdo.server.feature.group"/>
       <features name="org.eclipse.emf.cdo.feature.group"/>
       <features name="fr.obeo.mda.license.feature.group"/>
+      <features name="org.eclipse.gmf.runtime.notation.feature.patch.feature.group"/>
       <categories name="201309201125.od"/>
     </repositories>
   </contributions>
