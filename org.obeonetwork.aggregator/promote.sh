@@ -32,7 +32,7 @@ fi
 
 # Exit on error
 set -e
-
+echo "BUILD_TYPE is : $BUILD_TYPE"
 echo "Destination is : $PROMOTION_ROOT"
 
 # Remove the target file if any 
