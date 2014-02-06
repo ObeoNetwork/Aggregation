@@ -17,13 +17,16 @@ export OD_VERSION="od62"
 
 case "$BUILD_TYPE" in
 
-R) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/livraison/$OD_VERSION"
+R) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/livraison/$OD_VERSION"
+   export MARKETPLACE_LOCATION="/Shares/INTERNET/HTTP/PUBLIC/marketplace/updates/$OD_VERSION"
     ;;
-S) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/stable/$OD_VERSION"
+S) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/stable/$OD_VERSION"
+   export MARKETPLACE_LOCATION="/Shares/INTERNET/HTTP/PUBLIC/marketplace/updates/milestones/$OD_VERSION"
     ;;
-N) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/integration/updates/$OD_VERSION"
+N) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/integration/updates/$OD_VERSION"
+   export MARKETPLACE_LOCATION="/Shares/INTERNET/HTTP/PUBLIC/marketplace/updates/nightly/$OD_VERSION"
     ;;
-*) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/integration/updates/$OD_VERSION"
+*) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/integration/updates/$OD_VERSION"
    ;;
 esac
 
@@ -35,7 +38,14 @@ esac
 # Exit on error
 set -e
 echo "BUILD_TYPE is : $BUILD_TYPE"
-echo "Destination is : $PROMOTION_ROOT"
+echo "Intranet destination is : $PROMOTION_ROOT"
+echo "Marketplace Destination is : $MARKETPLACE_LOCATION"
+
+
+# Remove the target file if any 
+ssh integration@dervallieres rm -Rf "$MARKETPLACE_LOCATION"
+ssh integration@dervallieres mkdir -p "$MARKETPLACE_LOCATION"
+scp -r "$WORKSPACE/org.obeonetwork.aggregator/result/final/" "integration@dervallieres:$MARKETPLACE_LOCATION/"
 
 # Remove the target file if any 
 ssh integration@fileserver rm -Rf "$PROMOTION_ROOT"
