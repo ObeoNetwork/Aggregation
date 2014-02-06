@@ -45,10 +45,10 @@ echo "Marketplace Destination is : $MARKETPLACE_LOCATION"
 # Remove the target file if any 
 ssh integration@dervallieres rm -Rf "$MARKETPLACE_LOCATION"
 ssh integration@dervallieres mkdir -p "$MARKETPLACE_LOCATION"
-scp -r "$WORKSPACE/org.obeonetwork.aggregator/result/final/*" "integration@dervallieres:$MARKETPLACE_LOCATION/"
+(cd "$WORKSPACE/org.obeonetwork.aggregator/result/final/" ; scp -r . "integration@dervallieres:$MARKETPLACE_LOCATION/")
 
 # Remove the target file if any 
 ssh integration@fileserver rm -Rf "$PROMOTION_ROOT"
 # Create a file "viewpointChangesURL.txt" that contains the URL of the page that displays Viewpoint changes contents for this p2 repository
 ssh integration@fileserver mkdir -p "$PROMOTION_ROOT"
-scp -r "$WORKSPACE/org.obeonetwork.aggregator/result/final/*" "integration@fileserver:$PROMOTION_ROOT/"
+(cd "$WORKSPACE/org.obeonetwork.aggregator/result/final/" ; scp -r . "integration@fileserver:$PROMOTION_ROOT/")
