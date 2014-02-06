@@ -15,15 +15,17 @@ provided by the Hudson build.
 export OD_VERSION="od62"
 
 
-export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/integration/updates/$OD_VERSION"
-if [ $BUILD_TYPE='R' ];
-then
-  export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/livraison/$OD_VERSION"
-fi
-if [ $BUILD_TYPE='S' ];
-then
-  export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/stable/$OD_VERSION"
-fi
+case "$BUILD_TYPE" in
+
+R) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/livraison/$OD_VERSION"
+    ;;
+S) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/stable/$OD_VERSION"
+    ;;
+N) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/integration/updates/$OD_VERSION"
+    ;;
+*) export PROMOTION_ROOT="/Shares/DOCUMENTS/partage/logiciels/obeo/bundles/network/wagon/integration/updates/$OD_VERSION"
+   ;;
+esac
 
 
 ######################################################################
