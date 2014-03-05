@@ -21,6 +21,12 @@
     <contributions label="SysML Designer">
       <repositories location="http://update.obeo.fr/release/sysml/3.0.0"/>
     </contributions>
+    <contributions label="Information System Designers">
+      <repositories location="http://update.obeo.fr/release/informationsystem/2.4/design/"/>
+    </contributions>
+    <contributions label="Information System Generators">
+      <repositories location="http://update.obeo.fr/release/informationsystem/2.4/generators/"/>
+    </contributions>
   </validationSets>
   <configurations/>
   <configurations operatingSystem="linux" windowSystem="gtk"/>
