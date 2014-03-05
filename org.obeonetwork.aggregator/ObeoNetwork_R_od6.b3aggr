@@ -22,10 +22,10 @@
       <repositories location="http://update.obeo.fr/release/sysml/3.0.0"/>
     </contributions>
     <contributions label="Information System Designers">
-      <repositories location="http://update.obeo.fr/release/informationsystem/2.4/design/"/>
+      <repositories location="http://update.obeo.fr/release/informationsystem/2.4/design/repository/"/>
     </contributions>
     <contributions label="Information System Generators">
-      <repositories location="http://update.obeo.fr/release/informationsystem/2.4/generators/"/>
+      <repositories location="http://update.obeo.fr/release/informationsystem/2.4/generators/repository/"/>
     </contributions>
   </validationSets>
   <configurations/>
