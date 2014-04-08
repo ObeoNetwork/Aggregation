@@ -15,11 +15,13 @@
     </contributions>
     <contributions label="UML Designer">
       <repositories location="http://update.obeo.fr/release/uml/3.0.0">
-        <features name="org.obeonetwork.dsl.feature.uml2.feature.group"/>
+        <features name="org.obeonetwork.dsl.feature.uml2.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
       </repositories>
     </contributions>
     <contributions label="SysML Designer">
-      <repositories location="http://update.obeo.fr/release/sysml/3.0.0"/>
+      <repositories location="http://update.obeo.fr/release/sysml/3.0.0">
+        <features name="org.obeonetwork.dsl.sysml.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      </repositories>
     </contributions>
     <contributions label="Information System Designers">
       <repositories location="http://update.obeo.fr/release/informationsystem/2.4/design/repository/"/>
@@ -34,6 +36,8 @@
   <configurations/>
   <configurations operatingSystem="linux" windowSystem="gtk"/>
   <configurations operatingSystem="macosx" windowSystem="carbon"/>
-  <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network"/>
+  <configurations architecture="x86_64"/>
+  <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
+  <customCategories identifier="org.obeonetwork.aggregation" label="UML and SysML Designer" features="//@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='SysML%20Designer']/@repositories.0/@features.0"/>
   <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
 </aggregator:Aggregation>
