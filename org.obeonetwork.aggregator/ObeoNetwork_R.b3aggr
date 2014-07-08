@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="ASCII"?>
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 1.0" buildRoot="/tmp/ON_sirius_1_0">
   <validationSets label="main">
+    <contributions label="Luna">
+      <repositories location="http://download.eclipse.org/releases/luna"/>
+    </contributions>
     <contributions label="Sirius">
       <repositories location="http://download.eclipse.org/sirius/updates/releases/1.0.0/luna"/>
     </contributions>
@@ -9,6 +12,9 @@
     </contributions>
     <contributions label="SysML Designer">
       <repositories location="http://update.obeo.fr/release/sysml/4.0.0"/>
+    </contributions>
+    <contributions label="SWTBot">
+      <repositories location="http://download.eclipse.org/technology/swtbot/releases/2.1.1/"/>
     </contributions>
   </validationSets>
   <configurations/>
