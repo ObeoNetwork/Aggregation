@@ -38,7 +38,7 @@
                         <repository>
                             <id>B3 aggregator</id>
                             <layout>p2</layout>
-                            <url> http://download.eclipse.org/modeling/emft/b3/updates-4.3/</url>
+                            <url> http://download.eclipse.org/modeling/emft/b3/updates-4.4/</url>
                         </repository>
                     </repositories>
                     <appArgLine>-application org.eclipse.b3.cli.headless aggregate --buildModel ObeoNetwork_${BUILD_TYPE}.b3aggr --action CLEAN_BUILD</appArgLine>
