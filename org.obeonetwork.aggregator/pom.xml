@@ -10,7 +10,7 @@
     <properties>
         <tycho-version>0.18.1</tycho-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!-- might be N, R or S-->
+        <!-- might be N or R -->
         <BUILD_TYPE>N</BUILD_TYPE> 
     </properties>
 
@@ -33,7 +33,7 @@
                         <repository>
                             <id>B3 requirements</id>
                             <layout>p2</layout>
-                            <url> http://download.eclipse.org/releases/kepler/</url>
+                            <url> http://download.eclipse.org/releases/luna/</url>
                         </repository>
                         <repository>
                             <id>B3 aggregator</id>
@@ -41,7 +41,7 @@
                             <url> http://download.eclipse.org/modeling/emft/b3/updates-4.3/</url>
                         </repository>
                     </repositories>
-                    <appArgLine>-application org.eclipse.b3.cli.headless aggregate --buildModel ObeoNetwork_${BUILD_TYPE}_od6.b3aggr --action CLEAN_BUILD</appArgLine>
+                    <appArgLine>-application org.eclipse.b3.cli.headless aggregate --buildModel ObeoNetwork_${BUILD_TYPE}.b3aggr --action CLEAN_BUILD</appArgLine>
                     <dependencies>
                         <dependency>
                             <artifactId>org.eclipse.b3.aggregator.engine.feature</artifactId>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 1.0" buildRoot="/tmp/ON_sirius_1_0">
+  <validationSets label="main">
+    <contributions label="Sirius">
+      <repositories location="http://download.eclipse.org/sirius/updates/releases/1.0.0/luna"/>
+    </contributions>
+    <contributions label="UML Designer">
+      <repositories location="http://update.obeo.fr/integration/uml/"/>
+    </contributions>
+    <contributions label="SysML Designer">
+      <repositories location="http://update.obeo.fr/integration/sysml/"/>
+    </contributions>
+  </validationSets>
+  <configurations/>
+  <configurations operatingSystem="linux" windowSystem="gtk"/>
+  <configurations operatingSystem="macosx" windowSystem="carbon"/>
+  <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network"/>
+  <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
+</aggregator:Aggregation>

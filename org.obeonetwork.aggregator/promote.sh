@@ -12,7 +12,7 @@ provided by the Hudson build.
     exit 1
 }
 
-export OD_VERSION="od62"
+export OD_VERSION="sirius1.0"
 
 
 case "$BUILD_TYPE" in
