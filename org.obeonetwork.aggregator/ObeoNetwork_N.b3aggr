@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="ASCII"?>
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 1.0" buildRoot="/tmp/ON_sirius_1_0">
   <validationSets label="main">
-    <contributions label="Sirius">
-      <repositories location="http://download.eclipse.org/sirius/updates/releases/1.0.0/luna"/>
+    <contributions label="Luna">
+      <repositories location="http://download.eclipse.org/releases/luna">
+        <features name="org.eclipse.sirius.runtime.feature.group"/>
+      </repositories>
     </contributions>
     <contributions label="UML Designer">
-      <repositories location="http://update.obeo.fr/integration/uml/"/>
+      <repositories location="http://update.obeo.fr/release/uml/4.0.0">
+        <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+        <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      </repositories>
     </contributions>
     <contributions label="SysML Designer">
-      <repositories location="http://update.obeo.fr/integration/sysml/"/>
+      <repositories location="http://update.obeo.fr/release/sysml/4.0.0">
+        <features name="org.obeonetwork.dsl.sysml.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+        <features name="org.obeonetwork.dsl.sysml.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      </repositories>
     </contributions>
   </validationSets>
   <configurations/>
- <configurations operatingSystem="linux" windowSystem="gtk"/>
-  <configurations operatingSystem="macosx" windowSystem="carbon"/>
+  <configurations operatingSystem="linux" windowSystem="gtk"/>
+  <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
-  <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network"/>
+  <customCategories identifier="org.obeonetwork.aggregation" label="UML and SysML Designer" features="//@validationSets[label='main']/@contributions[label='SysML%20Designer']/@repositories.0/@features.1 //@validationSets[label='main']/@contributions[label='SysML%20Designer']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.1 //@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0"/>
   <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
 </aggregator:Aggregation>
