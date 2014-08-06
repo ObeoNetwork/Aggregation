@@ -7,13 +7,13 @@
       </repositories>
     </contributions>
     <contributions label="UML Designer">
-      <repositories location="http://update.obeo.fr/release/uml/4.0.0">
+      <repositories location="http://update.obeo.fr/release/uml/4.0.1">
         <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
       </repositories>
     </contributions>
     <contributions label="SysML Designer">
-      <repositories location="http://update.obeo.fr/release/sysml/4.0.0">
+      <repositories location="http://update.obeo.fr/release/sysml/4.0.1">
         <features name="org.obeonetwork.dsl.sysml.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.sysml.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
       </repositories>
