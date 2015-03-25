@@ -21,11 +21,16 @@
     <contributions label="UML to Java Generator">
       <repositories location="http://update.obeo.fr/release/acceleo3-modules/uml2java/release-2.0.2/repository/"/>
     </contributions>
+    <contributions label="BPMN Designer">
+      <repositories location="http://update.obeo.fr/release/bpmn2/2.0.0/">
+        <features name="org.obeonetwork.dsl.bpmn2.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      </repositories>
+    </contributions>
     <validationRepositories location="http://mirror.update.eclipse.obeo.fr/release-indigo-3.7/"/>
   </validationSets>
   <configurations/>
   <configurations operatingSystem="linux" windowSystem="gtk"/>
   <configurations operatingSystem="macosx" windowSystem="carbon"/>
-  <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network" features="//@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0"/>
+  <customCategories identifier="org.obeonetwork.aggregation" label="Obeo Network" features="//@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='BPMN%20Designer']/@repositories.0/@features.0"/>
   <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
 </aggregator:Aggregation>
