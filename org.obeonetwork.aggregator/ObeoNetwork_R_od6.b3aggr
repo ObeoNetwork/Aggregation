@@ -43,6 +43,6 @@
   <configurations operatingSystem="macosx" windowSystem="carbon"/>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
-  <customCategories identifier="org.obeonetwork.aggregation" label="UML and SysML Designer" features="//@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='SysML%20Designer']/@repositories.0/@features.0" //@validationSets[label='main']/@contributions[label='BPMN%20Designer']/@repositories.0/@features.0"/>
+  <customCategories identifier="org.obeonetwork.aggregation" label="UML and SysML Designer" features="//@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='SysML%20Designer']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='BPMN%20Designer']/@repositories.0/@features.0"/>
   <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
 </aggregator:Aggregation>
