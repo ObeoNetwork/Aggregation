@@ -33,9 +33,7 @@
       <repositories location="http://download.eclipse.org/modeling/emft/eef/updates/releases/1.3"/>
     </contributions>
     <contributions label="BPMN Designer">
-      <repositories location="http://update.obeo.fr/release/bpmn2/2.0.0/">
-        <features name="org.obeonetwork.dsl.bpmn2.feature.feature.group"/>
-      </repositories>
+      <repositories location="http://update.obeo.fr/release/bpmn2/2.0.0/"/>
     </contributions>
   </validationSets>
   <configurations/>
