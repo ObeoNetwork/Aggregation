@@ -19,6 +19,11 @@
         <features name="org.eclipse.sirius.specifier.ide.ui.feature.group"/>
       </repositories>
     </contributions>
+    <contributions label="SysML Designer">
+      <repositories location="http://update.obeo.fr/release/sysml/5.0.0/">
+        <features name="org.obeonetwork.dsl.sysml.runtime.feature.feature.group"/>
+      </repositories>
+    </contributions>
     <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
   </validationSets>
   <configurations/>
