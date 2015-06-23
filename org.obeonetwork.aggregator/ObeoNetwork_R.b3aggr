@@ -27,6 +27,9 @@
     <contributions label="BPMN-Designer">
       <repositories location="http://update.obeo.fr/release/bpmn2/3.0.0/"/>
     </contributions>
+    <contributions label="InformationSystem Designer">
+      <repositories location="http://update.obeo.fr/release/informationsystem/3.0/"/>        
+    </contributions>
     <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository/"/>
   </validationSets>
   <configurations/>
