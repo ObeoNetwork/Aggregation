@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="ASCII"?>
-<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 2.0" buildRoot="/tmp/ON_sirius_2_0">
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 3.0" buildRoot="/tmp/ON_sirius_3_0">
   <validationSets label="main">
     <contributions label="Base Platform">
-      <repositories location="http://www.obeo.fr/download/release/designer/7.0/community/latest/repository"/>
+      <repositories location="http://www.obeo.fr/download/release/designer/8.0/community/latest/repository"/>
       <repositories location="http://download.eclipse.org/releases/mars/">
         <features name="org.eclipse.amalgam.discovery.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="UML Designer">
-      <repositories location="http://uml-designer.s3.amazonaws.com/travis-build/">
+      <repositories location="http://obeo-umldesigner-nightly.s3-website-eu-west-1.amazonaws.com/master/repository">
         <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      </repositories>
+    </contributions>
+    <contributions label="Sirius">
+      <repositories location="http://download.eclipse.org/sirius/updates/releases/3.0.0/mars">
+        <features name="org.eclipse.sirius.runtime.feature.group"/>
+        <features name="org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group"/>
+        <features name="org.eclipse.sirius.specifier.ide.ui.feature.group"/>
       </repositories>
     </contributions>
     <contributions enabled="false" label="SysML Designer">
