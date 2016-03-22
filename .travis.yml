@@ -4,7 +4,9 @@ env:
   - MAVEN_OPTS="-XX:MaxPermSize=512m"  
 sudo: false
 script:
-- mvn clean package -e -f org.obeonetwork.aggregator/pom.xml
+- mkdir -p org.obeonetwork.aggregator/result/final/
+- touch org.obeonetwork.aggregator/result/final/update-site.txt
+#- mvn clean package -e -f org.obeonetwork.aggregator/pom.xml
 - chmod a+x prepare-deploy-local-dir.sh
 - "./prepare-deploy-local-dir.sh $TRAVIS_BUILD_DIR/nightly"
 after_script:
