@@ -2,6 +2,8 @@ language: java
 env:
   global:
   - MAVEN_OPTS="-XX:MaxPermSize=512m"  
+jdk:
+  - oraclejdk8
 sudo: false
 script:
 - mkdir -p org.obeonetwork.aggregator/result/final/
