@@ -1,4 +1,4 @@
-language: ruby
+language: java
 env:
   global:
   - MAVEN_OPTS="-XX:MaxPermSize=512m"  
