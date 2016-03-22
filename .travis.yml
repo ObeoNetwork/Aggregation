@@ -25,5 +25,5 @@ deploy:
     upload-dir: update/${TRAVIS_BRANCH}
     on:
       all_branches: true
-      repo: ObeoNetwork/UML-Designer
+      repo: ObeoNetwork/Aggregation
 
