@@ -1,5 +1,5 @@
 #! /usr/bin/env sh
-UPDATE_SITE_DIR=/org.obeonetwork.aggregator/result/final/
+UPDATE_SITE_DIR=org.obeonetwork.aggregator/result/final
 DEPLOY_LOCAL_DIR=$1
 echo "Prepare deploy local dir = ${DEPLOY_LOCAL_DIR}"
 # Create nightly folder
