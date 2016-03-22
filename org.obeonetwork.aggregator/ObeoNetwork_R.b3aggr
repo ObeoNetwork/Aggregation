@@ -3,11 +3,11 @@
   <validationSets label="main">
     <contributions label="Base Platform">
       <repositories location="http://www.obeo.fr/download/release/designer/8.0/community/latest/repository"/>
-      <repositories location="http://download.eclipse.org/releases/mars/">
+      <repositories location="http://download.eclipse.org/releases/mars/201602261000">
         <features name="org.eclipse.amalgam.discovery.feature.group"/>
       </repositories>
     </contributions>
-        <contributions label="UML Designer">
+    <contributions label="UML Designer">
       <repositories location="http://releases.umldesigner.org/6.0.0/repository">
         <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>

@@ -6,7 +6,7 @@ sudo: false
 script:
 - mkdir -p org.obeonetwork.aggregator/result/final/
 - touch org.obeonetwork.aggregator/result/final/update-site.txt
-#- mvn clean package -e -f org.obeonetwork.aggregator/pom.xml
+- mvn clean package -e -f org.obeonetwork.aggregator/pom.xml
 - chmod a+x prepare-deploy-local-dir.sh
 - "./prepare-deploy-local-dir.sh $TRAVIS_BUILD_DIR/nightly"
 after_script:
@@ -22,7 +22,7 @@ deploy:
     acl: public_read
     skip_cleanup: true
     region: eu-west-1
-    upload-dir: update/${TRAVIS_BRANCH}
+    upload-dir: ${TRAVIS_BRANCH}
     on:
       all_branches: true
       repo: ObeoNetwork/Aggregation
