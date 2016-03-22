@@ -12,8 +12,7 @@ script:
 after_script:
 - chmod a+x travis-promote.sh
 - ./travis-promote.sh
-deploy:
-  matrix:
+deploy:  
   - provider: s3
     access_key_id: AKIAI7GYGSUKTIBLAI6Q
     secret_access_key:
