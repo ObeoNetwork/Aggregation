@@ -25,5 +25,6 @@ deploy:
     region: eu-west-1
     upload-dir: update/${TRAVIS_BRANCH}
     on:
-      branch: sirius_3_0
+      all_branches: true
+      repo: ObeoNetwork/UML-Designer
 
