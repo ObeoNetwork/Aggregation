@@ -7,7 +7,7 @@
         <features name="org.eclipse.amalgam.discovery.feature.group"/>
       </repositories>
     </contributions>
-    <contributions enabled="false" label="UML Designer">
+    <contributions label="UML Designer">
       <repositories location="http://releases.umldesigner.org/6.0.0/repository">
         <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
