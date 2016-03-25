@@ -3,7 +3,7 @@
   <validationSets label="main">
     <contributions label="Base Platform">
       <repositories location="http://www.obeo.fr/download/release/designer/8.1/community/latest/repository"/>
-      <repositories location="http://download.eclipse.org/releases/mars/201510021000">
+      <repositories location="http://download.eclipse.org/releases/mars/201602261000">
         <features name="org.eclipse.amalgam.discovery.feature.group"/>
       </repositories>
     </contributions>
