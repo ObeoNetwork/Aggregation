@@ -2,25 +2,25 @@
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 3.0" buildRoot="target/update">
   <validationSets label="main">
     <contributions label="Base Platform">
-      <repositories location="http://www.obeo.fr/download/release/designer/8.1/community/latest/repository"/>
-      <repositories location="http://download.eclipse.org/releases/mars/201510021000">
+      <repositories location="http://www.obeo.fr/download/release/designer/9.0/community/latest/repository"/>
+      <repositories location="http://download.eclipse.org/releases/neon">
         <features name="org.eclipse.amalgam.discovery.feature.group"/>
       </repositories>
     </contributions>
     <contributions enabled="false" label="UML Designer">
-      <repositories location="http://releases.umldesigner.org/6.0.0/repository">
+      <repositories location="http://releases.umldesigner.org/7.0.0/repository">
         <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
       </repositories>
     </contributions>
     <contributions label="Sirius">
-      <repositories location="http://download.eclipse.org/sirius/updates/releases/3.1.x/mars">
+      <repositories location="http://download.eclipse.org/sirius/updates/releases/4.0.0/neon">
         <features name="org.eclipse.sirius.runtime.feature.group"/>
         <features name="org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group"/>
         <features name="org.eclipse.sirius.specifier.ide.ui.feature.group"/>
       </repositories>
     </contributions>
-    <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20150519210750/repository/"/>
+    <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20160520211859/repository/"/>
   </validationSets>
   <configurations/>
   <configurations operatingSystem="linux" windowSystem="gtk"/>
