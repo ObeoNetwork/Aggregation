@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="ASCII"?>
-<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 3.0" buildRoot="target/update">
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 4.0" buildRoot="target/update">
   <validationSets label="main">
     <contributions label="Base Platform">
       <repositories location="http://www.obeo.fr/download/release/designer/9.0/community/latest/repository"/>
-      <repositories location="http://download.eclipse.org/releases/neon/">
+      <repositories location="http://download.eclipse.org/releases/neon">
         <features name="org.eclipse.amalgam.discovery.feature.group"/>
       </repositories>
     </contributions>
-    <contributions enabled="false" label="UML Designer">
+    <contributions label="UML Designer">
       <repositories location="http://releases.umldesigner.org/7.0.0/repository">
         <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
