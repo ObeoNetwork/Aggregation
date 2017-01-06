@@ -13,9 +13,6 @@
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
       </repositories>
     </contributions>
-    <contributions label="InformationSystem Designer">
-      <repositories location="http://www.obeo.fr/download/release/informationsystem/5.0/repository/"/>
-    </contributions>
     <contributions label="Sirius">
       <repositories location="http://download.eclipse.org/sirius/updates/releases/3.1.x/mars">
         <features name="org.eclipse.sirius.runtime.feature.group"/>
