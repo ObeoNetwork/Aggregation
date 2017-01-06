@@ -2,7 +2,10 @@
 <aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/b3/2011/aggregator/1.1.0" label="Obeo Network for Sirius 3.0" buildRoot="target/update">
   <validationSets label="main">
     <contributions label="Base Platform">
-      <repositories location="http://www.obeo.fr/download/release/designer/8.1/community/latest/repository"/>
+      <repositories location="http://www.obeo.fr/download/release/designer/8.1/team/latest/repository">
+        <categories name="201611041038.od-te"/>
+        <categories name="201611041038.od-ce"/>
+      </repositories>
       <repositories location="http://download.eclipse.org/releases/mars/201510021000">
         <features name="org.eclipse.amalgam.discovery.feature.group"/>
       </repositories>
@@ -12,6 +15,18 @@
         <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
       </repositories>
+    </contributions>
+    <contributions label="InformationSystem Designer">
+      <repositories location="http://www.obeo.fr/download/release/informationsystem/5.0/repository/">
+        <categories name="201612231334.org.obeonetwork.informationsystem.commons"/>
+        <categories name="201612231334.org.obeonetwork.informationsystem.m2doc"/>
+        <categories name="201612231334.Default"/>
+        <categories name="201612231334.org.obeonetwork.informationsystem.designs"/>
+        <categories name="201612231334.org.obeonetwork.informationsystem.models"/>
+        <categories name="201612231334.org.obeonetwork.informationsystem.reversers"/>
+        <categories name="201612231334.org.obeonetwork.informationsystem.scaffolding"/>
+      </repositories>
+      <repositories location="https://s3-eu-west-1.amazonaws.com/obeo-m2doc-releases/M2Doc_0.9.6/repository"/>
     </contributions>
     <contributions label="Sirius">
       <repositories location="http://download.eclipse.org/sirius/updates/releases/3.1.x/mars">
