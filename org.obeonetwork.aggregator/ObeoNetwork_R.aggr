@@ -1,35 +1,54 @@
 <?xml version="1.0" encoding="ASCII"?>
-<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Obeo Network for Sirius 5.0" buildRoot="target/update">
+<aggregator:Aggregation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:aggregator="http://www.eclipse.org/cbi/p2repo/2011/aggregator/1.1.0" label="Obeo Network for Sirius 5.1" buildRoot="target/update">
   <validationSets label="main">
-    <contributions label="Base Platform">
-      <repositories location="http://www.obeo.fr/download/release/designer/10.0/community/latest/repository"/>
-      <repositories location="http://download.eclipse.org/releases/neon">
-        <features name="org.eclipse.amalgam.discovery.feature.group"/>
-      </repositories>
-    </contributions>
     <contributions label="UML Designer">
-      <repositories location="http://releases.umldesigner.org/8.0.0/repository">
-        <features name="org.obeonetwork.dsl.uml2.runtime.sdk.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      <repositories location="https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/repository/">
         <features name="org.obeonetwork.dsl.uml2.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      </repositories>
+      <repositories location="https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/core/repository/">
+        <features name="org.obeonetwork.dsl.uml2.core.runtime.feature.feature.group"/>
+      </repositories>
+      <repositories location="https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/discovery/">
+        <features name="org.obeonetwork.dsl.uml2.discovery.feature.feature.group"/>
+      </repositories>
+      <repositories location="https://s3-eu-west-1.amazonaws.com/obeo-umldesigner-releases/8.1.0/feature-patches">
+        <features name="org.eclipse.sirius.runtime.patch.feature.group"/>
+        <features name="org.eclipse.sirius.properties.feature.patch.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="Sirius">
-      <repositories location="http://download.eclipse.org/sirius/updates/releases/5.0.2/oxygen">
+      <repositories location="http://download.eclipse.org/sirius/updates/releases/5.1.0/neon">
+        <features name="org.eclipse.acceleo.query.feature.group"/>
+        <features name="org.eclipse.eef.ext.widgets.reference.feature.feature.group"/>
+        <features name="org.eclipse.eef.sdk.feature.feature.group"/>
+        <features name="org.eclipse.sirius.aql.feature.group"/>
+        <features name="org.eclipse.sirius.interpreter.feature.feature.group"/>
+        <features name="org.eclipse.sirius.properties.feature.feature.group"/>
+        <features name="org.eclipse.sirius.runtime.aql.feature.group"/>
         <features name="org.eclipse.sirius.runtime.feature.group"/>
-        <features name="org.eclipse.sirius.runtime.ide.ui.acceleo.feature.group"/>
-        <features name="org.eclipse.sirius.specifier.ide.ui.feature.group"/>
+        <features name="org.eclipse.sirius.runtime.ide.ui.feature.group"/>
+        <features name="org.eclipse.sirius.specifier.properties.feature.feature.group"/>
       </repositories>
     </contributions>
     <contributions label="SysML Designer">
-      <repositories location="https://s3-eu-west-1.amazonaws.com/obeo-sysmldesigner-releases/8.0.0/repository/"/>
+      <repositories location="https://s3-eu-west-1.amazonaws.com/obeo-sysmldesigner-releases/8.1.0/repository/">
+        <features name="org.obeonetwork.dsl.sysml.runtime.feature.feature.group" categories="//@customCategories[identifier='org.obeonetwork.aggregation']"/>
+      </repositories>
+    </contributions>
+    <contributions label="Amalgam">
+      <repositories location="http://download.eclipse.org/modeling/amalgam/updates/stable/1.9.0-S20180326/capella"/>
+    </contributions>
+    <contributions label="EEF">
+      <repositories location="http://download.eclipse.org/modeling/emft/eef/updates/releases/2.0"/>
     </contributions>
     <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository"/>
+    <validationRepositories location="http://download.eclipse.org/releases/neon"/>
   </validationSets>
   <configurations/>
   <configurations operatingSystem="linux" windowSystem="gtk"/>
   <configurations operatingSystem="macosx" windowSystem="cocoa" architecture="x86_64"/>
   <configurations architecture="x86_64"/>
   <configurations operatingSystem="linux" windowSystem="gtk" architecture="x86_64"/>
-  <customCategories identifier="org.obeonetwork.aggregation" label="UML Designer" features="//@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.1 //@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0"/>
-  <contacts name="Cedric Brun" email="cedric.brun@obeo.fr"/>
+  <customCategories identifier="org.obeonetwork.aggregation" label="UML/SysML Designer" features="//@validationSets[label='main']/@contributions[label='SysML%20Designer']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='UML%20Designer']/@repositories.0/@features.0"/>
+  <contacts name="Melanie Bats" email="melanie.bats@obeo.fr"/>
 </aggregator:Aggregation>

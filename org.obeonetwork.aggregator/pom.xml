@@ -11,7 +11,7 @@
         <tycho-version>0.24.0</tycho-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- might be N or R -->
-        <BUILD_TYPE>R</BUILD_TYPE> 
+        <BUILD_TYPE>N</BUILD_TYPE> 
     </properties>
 
 
@@ -38,15 +38,23 @@
                         <repository>
                             <id>B3 aggregator</id>
                             <layout>p2</layout>
-                            <url> http://download.eclipse.org/cbi/updates/aggregator/headless/4.7/</url>
+                            <url> http://download.eclipse.org/cbi/updates/aggregator/ide/4.7/</url>
                         </repository>
                     </repositories>
                     <appArgLine>-application org.eclipse.cbi.p2repo.cli.headless aggregate --buildModel ObeoNetwork_${BUILD_TYPE}.aggr --action CLEAN_BUILD</appArgLine>
                     <dependencies>
-                        <dependency>
-                            <artifactId>org.eclipse.cbi.p2repo.aggregator.engine.feature</artifactId>
-                            <type>eclipse-feature</type>
-                        </dependency>                 
+                    	<dependency>
+             				<artifactId>org.eclipse.cbi.p2repo.aggregator.engine.feature.feature.group</artifactId>
+             				<type>p2-installable-unit</type>
+                    	</dependency>
+                    	<dependency>
+             				<artifactId>org.eclipse.equinox.p2.core.feature</artifactId>
+             				<type>eclipse-feature</type>
+                    	</dependency>
+                    	<dependency>
+             				<artifactId>org.eclipse.equinox.core.feature</artifactId>
+             				<type>eclipse-feature</type>
+                    	</dependency>                
                     </dependencies>
                 </configuration>
                 <executions>
