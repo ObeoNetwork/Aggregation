@@ -11,7 +11,7 @@
         <tycho-version>0.24.0</tycho-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- might be N or R -->
-        <BUILD_TYPE>N</BUILD_TYPE> 
+        <BUILD_TYPE>R</BUILD_TYPE> 
     </properties>
 
 
