@@ -17,7 +17,7 @@
       </repositories>
     </contributions>
     <contributions label="Sirius">
-      <repositories location="http://download.eclipse.org/sirius/updates/releases/5.1.2/neon">
+      <repositories location="http://download.eclipse.org/sirius/updates/releases/6.1.1/oxygen">
         <features name="org.eclipse.acceleo.query.feature.group"/>
         <features name="org.eclipse.eef.ext.widgets.reference.feature.feature.group"/>
         <features name="org.eclipse.eef.sdk.feature.feature.group"/>
@@ -36,12 +36,12 @@
       </repositories>
     </contributions>
     <contributions label="Amalgam">
-      <repositories location="http://download.eclipse.org/modeling/amalgam/updates/stable/1.9.0-S20180528/capella"/>
+      <repositories location="http://download.eclipse.org/modeling/amalgam/updates/stable/1.10.0-S20181119/capella"/>
     </contributions>
     <contributions label="EEF">
       <repositories location="http://download.eclipse.org/modeling/emft/eef/updates/releases/2.0"/>
     </contributions>
-    <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20170307180635/repository"/>
+    <validationRepositories location="http://download.eclipse.org/tools/orbit/downloads/drops/R20140525021250/repository"/>
     <validationRepositories location="http://download.eclipse.org/releases/neon"/>
   </validationSets>
   <configurations/>
